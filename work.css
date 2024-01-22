@@ -1,0 +1,161 @@
+@font-face {
+    font-family:neu ;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-family: neu;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+@font-face {
+    font-family: neu;
+    font-weight: 800;
+    src: url(./NeueHaasDisplayBold.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+.part1{
+    min-height:100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+    
+}
+nav{
+    padding:2vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav-part2{
+    display:flex;
+    align-items: center;
+    gap:1vw;
+    padding-right: 1vw;
+    
+}
+.nav-part2 h4{
+    padding:10px 20px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all ease 0.4s;
+    position: relative;
+    overflow: hidden;
+
+}
+.nav-part2 h4::after{
+    content: "";
+    height:100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left:0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+.nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+
+}
+.nav-part2 h4 a{
+    color:#000000bb;
+    position: relative;
+    z-index: 9;
+}
+.nav-part2 h4:hover a{
+    color:#fff;
+}
+.center{
+    min-height:90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:22vw;
+    position: relative;
+    
+
+}
+.center .left h1{
+    position: absolute;
+    top:15%;
+    font-size: 9vw;
+    font-weight: 800;
+    text-decoration: none solid rgb(11,5,0);
+    z-index:9;
+    
+}
+.left .bar{
+    padding:1vw 1.5vw;
+    
+    background-color: #efeae379;
+    border: 1px solid black;
+    border-radius: 49px;
+    background: linear-gradient(315deg, #d7d3cc, #fffaf3);
+    box-shadow:  -11px -11px 19px #817e7b,
+                 11px 11px 19px #ffffff;;
+    
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap:1vw;
+    z-index: 9;
+    
+    
+}
+.left .bar h4{
+    font-weight: 200;
+    color:black;
+}
+.right .gooey{
+    position:absolute;
+    top:0;
+    width: 80%;
+    left:22vw;
+    
+   
+    height:47vw;
+    width: 47vw;
+    background:linear-gradient(to top right,#c10202,#f78903e0);
+    border-radius: 50%;
+    
+
+    filter: blur(10px);
+    animation: gooey 3s linear infinite alternate;
+    
+
+    
+}
+@keyframes gooey {
+    from{
+        filter:blur(2vw);
+        transform: translate(10%,-10%)skew(0);
+    }
+    to{
+        filter:blur(2vw);
+        transform: translate(-10%,10%)skew(-12deg);
+    }
+    
+}
