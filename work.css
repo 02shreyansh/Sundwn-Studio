@@ -145,6 +145,7 @@ nav{
     filter: blur(10px);
     animation: gooey 3s linear infinite alternate;
     
+    
 
     
 }
@@ -157,5 +158,6 @@ nav{
         filter:blur(2vw);
         transform: translate(-10%,10%)skew(-12deg);
     }
+
     
 }

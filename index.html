@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clone sundown_studio</title>
+    <title>Sundown Studio</title>
     <link rel="shortcut icon" href="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c3_Sundown_Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fixed-image"></div>
+
+    
+    <!-- <div class="loader">
+        <h1>ENVIROMENTS</h1>
+        <h1>EXPERIENCES</h1>
+        <h1>CONTENT</h1>
+    </div> -->
+    <div class="fixed-image">
+        <div class="image-container"></div>
+        <div class="video-container"></div>
+    </div>
+
+    
+    
+    
     <div class="main">
+        
+        
         <div class="page1">
             <nav>
-                <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="sundownlogo" draggable="false">
+                <a href="index.html"><img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="sundownlogo" draggable="false"></a>
                 <div class="nav-part2">
                     <h4><a href="work.html">Work</a></h4>
                     <h4><a href="#">Studio</a></h4>
                     <h4><a href="contact.html">Contact</a></h4>
                 </div>
+                <h3>Menu</h3>
             </nav>
             <div class="center">
                 <div class="left">
@@ -37,7 +58,7 @@
                 <div class="hero-3"></div>
 
             </div>
-            <video autoplay loop muted src="c72af10b.mp4"></video>
+            <video autoplay loop muted src="video.mp4"></video>
         </div>
         <div class="page2">
             <div class="moving-text">
@@ -84,53 +105,204 @@
         <div class="page3">
             <div class="ele" >
                 <div class="small">
+                    
 
                 </div>
                 <h4>FEATURED PROJECTS</h4>
             </div>
             <div class="elem-container">
-                <div  class="elem" data-image="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16f4_Copy%2520of%2520Nike_Soho_50th_SU22_FL1_6176-p-800.webp">
+                <div  class="elem second" data-type="video" data-source="video3.mp4">
                     <div class="overlay"></div>
-                    <h2><a href="">Play New Kidvision</a></h2>
+                    <a href="" ><h2>Play New Kidvision</h2></a>
+                    <div class="element">
+                        <h4>NIKE</h4>
+                        <h4>Environment</h4>
+                    </div>
+
                 </div>
     
-                <div class="elem" data-image="">
+                <div class="elem first"  data-type="image" data-source="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388-p-800.webp">
                     <div class="overlay"></div>
-                    <h2>Makers Studio HOI</h2>
+                    <a href="" rel="noopenner noreferrer"><h2>Makers Studio HOI</h2></a>
+                    <div class="element">
+                        <h4>NIKE</h4>
+                        <h4>Experiential</h4>
+                    </div>
                 </div>
     
-                <div class="elem" data-image="">
+                <div class="elem second" data-type="video" data-source="video2.0.mp4">
                     <div class="overlay"></div>
-                    <h2>NYFW Popup</h2>
+                    <a href="" rel="noopenner noreferrer"><h2>NYFW Popup</h2></a>
+                    <div class="element">
+                        <h4>AFTERPAY</h4>
+                        <h4>Experiential</h4>
+                        
+                        
+                    </div>
                 </div>
     
-                <div class="elem" data-image="">
+                <div class="elem first"  data-type="image" data-source="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16f4_Copy%2520of%2520Nike_Soho_50th_SU22_FL1_6176-p-800.webp">
                     <div class="overlay"></div>
-                    <h2>50th Anniversary</h2>
+                    <a href="" rel="noopenner noreferrer"><h2>50th Anniversary</h2></a>
+                    <div class="element">
+                        
+                        <h4>NIKE</h4>
+                        <h4>Environment</h4>
+                    </div>
                 </div>
     
-                <div class="elem" data-image="">
+                <div class="elem  first"  data-type="image" data-source="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16c5_Copy%2520of%2520Nike_Soho_AMD21_0781_LORES-p-800.webp">
                     <div class="overlay"></div>
-                    <h2>Air Force 12021</h2>
+                    <a href="" rel="noopenner noreferrer"><h2>Air Force 12021</h2></a>
+                    <div class="element">
+                        <h4>NIKE</h4>
+                        <h4>Environment</h4>
+                    </div>
                 </div>
     
-                <div class="elem" data-image="">
+                <div class="elem second"  data-type="video" data-source="video.mp4">
                     <div class="overlay"></div>
-                    <h2>SOHO 2023</h2>
+                    <a href="" rel="noopenner noreferrer"><h2>SOHO 2023</h2></a>
+                    <div class="element">
+                        <h4>CONVERSE</h4>
+                        <h4>Environment</h4>
+                        
+                        
+                    </div>
                 </div>
     
-                <div class="elem" data-image="">
+                <div class="elem first"  data-type="image" data-source="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b163b_Copy-of-IMG_1180-p-800.webp">
                     <div class="overlay"></div>
-                    <h2>SOHO NYC</h2>
+                    <a href="" rel="noopenner noreferrer"><h2>SOHO NYC</h2></a>
+                    <div class="element">
+                        <h4>ARC'TERYX</h4>
+                        <h4>Environment</h4>
+                        
+                    </div>
                 </div>
             </div>
+            <a href="work.html" class="whole">
+                <div class="all">
+                    <h4>All Projects</h4>
+                    <img src="right-arrow.png" alt="Next">
+
+                </div>
+            </a>
+            
         </div>
+        <div class="page3-bottom">
+            <div class="left">
+                <div class="left-content">
+                    <h1 class="left-titles  active" onclick="opentab('design')">Design</h1>
+                    <h1 class="left-titles" onclick="opentab('project')">Project</h1>
+                    <h1 class="left-titles" onclick="opentab('execution')">Execution</h1>
+                </div>
+
+                <div class="tab">
+                    <p class="tab-contents active-tab" id="design">Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.</p>
+
+                    <p class="tab-contents" id="project">Once we have a design, our production team takes the lead in bringing it to life. We manage all stages of the project, from build specifications and technical drawings to site surveys, vendor management, and 2D & 3D production. We have an extensive network of partners to meet each unique design and project need.</p>
+
+                    <p class="tab-contents" id="execution">We’re with you every step of the way, from the project initiation to launch day. Our production and design teams are onsite to direct and guide the process down to the last point of completion, ensuring success across the built space and experience.</p>
+                </div>
+
+            </div>
+            <div class="right img-tab">
+                <img src="image4.webp" class="img-content active-img" id="design">
+                <img src="image5.webp"  class="img-content" id="project">
+                <img src="image6.webp"  class="img-content" id="execution"> 
+
+            </div>
+        </div>
+        
+        <div class="page4">
+            <div class="ele who" >
+                <div class="small">
+                    
+    
+                </div>
+                <h4>WHO WE WORK WITH</h4>
+            </div>
+            
+            <div class="swiper mySwiper">
+                
+                
+                
+                <div class="swiper-wrapper" id="swiperWrapper">
+                    
+                    
+                  
+                  <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15ff_Nike.svg" alt="">
+                    <h4>Retained Production support across </br> retail and events in NY,CHI,LA. </br> Creative Design,Design </br> Management,Production/Project </br> Mangement,and execution of work </br>  from concept to installation across </br> the country. </h4>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1600_Converse.svg" alt="">
+                    <h4>Creative Concepting,Design,Design </br> Management,Project Management, <br> and execution of work from concept <br> to installation across the Country. <br> Cross functional communication and <br> management of third party partners.</h4>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fd_Arc%E2%80%99teryx.svg" alt="">
+                    <h4>Production and design along with <br> install oversight and execution <br> support for the SoHo store opening <br> on Broadway St, New York. Also <br> working on creative and production <br> work for a new store opening in <br> Glendale, California.
+
+                    </h4>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fe_Hunter.svg" alt="">
+                    <h4>Design and Production partner for <br> Hunter Holiday 2022 Pop-in at <br> Nordstrom 57th St,New York, <br> including activations in Women's, <br> Men's and Kid's zones.Thirty five(35) <br> additional smaller take-downs in <br> Nordstrom stores across the US. <br> Concept design for Holiday boot <br> customization events in stores across <br> winter 2022.</h4>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1601_MediaLink.svg" alt="">
+                    <h4>Creative,Design,and Production <br> Partner for 2023 CES.Scope Included <br> creation of Branding Identity,Assets,and Digital Content,Design,Production <br> design,Production oversight and <br> Installation of client activations for IBM, <br> Delta,Instacart,and more.</h4>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1602_AfterPay.svg" alt="">
+                    <h4>Creative,Design,and Production  Partner for 2022 NY Fashion Week Pop-Up space.In Partnership with B-Reel  scope including creation of Final Design, Design Assets,3D Renders,Production  design,Production/Partner oversight  and creation of a two(2) story pop-up  for Afterpay's clients such as Crocs,JD  Sports,Container Store,& Revolve.</h4>
+                  </div>
+                  
+                </div>
+                
+            </div>
+        </div>
+        <div class="page5"></div>
+        <div id="full-scr">
+            <div class="full-div1"></div>
+        </div>
+        
+        
 
     </div>
+    <div class="footer">
+        <div class="footer-div">
+            <div class="link">
+                <h1><a href="work.html">Work</a></h1>
+                <h1><a href="studio.html">Studio</a></h1>
+                <h1><a href="contact.html">Contact</a></h1>
+            </div>
+            
+        </div>
+        <h1>Sundown</h1>
+        <div class="footer-bottom">
+            <h4>Copyright &copy; Sundown Studio</h4>
+            <div class="assets">
+                <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15cb_Globe.svg" alt="image">
+                <h4>Brooklyn, NY</h4>
+
+            </div>
+            
+            <h4><a href="https://www.instagram.com/02_shreyansh/">Instagram</a></h4>
+            
+            <h4><a href="https://www.linkedin.com/in/shreyansh-techenthusiastic/">Linkedln</a></h4>
+        </div>
+    </div>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="script.js"></script>
+
+    
     
 </body>
 </html>

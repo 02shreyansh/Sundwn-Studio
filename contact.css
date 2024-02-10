@@ -29,6 +29,10 @@ html,body{
     height: 100%;
     width: 100%;
 }
+.main{
+    position: relative;
+    z-index: 10;
+}
 .page1{
     min-height: 100vh;
     width: 100%;
@@ -44,6 +48,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     
+}
+nav h3{
+    display: none;
 }
 .nav-part2{
     display: flex;
@@ -101,7 +108,9 @@ nav{
     left:13%;
     top:2vw;
     
+    
 }
+
 .right{
 
     padding-right: 4vw;
@@ -165,13 +174,17 @@ nav{
 .content h2{
     word-spacing: -0.3vw;
     
+    
    
     padding: 1vw 0;
     font-size: 2vw;
     font-weight: 900;
     position: relative;
     z-index: 9;
+    
+    
 }
+
 .shape{
     height: 23vw;
     width: 23vw;
@@ -194,7 +207,114 @@ nav{
     }
     
 }
+.page2{
+    height:100vh;
+    width: 100%;
 
+}
+.footer{
+    position: fixed;
+    z-index: 9;
+    height: 105vh;
+    width: 100%;
+    background-color: #000000;
+    color:#fff;
+    bottom: 0;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1vw 3vw;
+
+
+}
+.footer h1{
+    font-size: 23vw;
+}
+.footer-div{
+    height: 20vh;
+    width: 100%;
+    background-color: red;
+}
+.footer-bottom{
+    
+    border-top: 1px solid #dadada;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+
+}
+.footer-bottom h4{
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+.footer-bottom a{
+    pointer-events: all;
+    cursor: pointer;
+    color:#fff;
+    position: relative;
+}
+.footer-bottom a::after{
+    content: "";
+    position: absolute;
+    height: 1%;
+    width: 0%;
+    background-color: white;
+    left:0;
+    bottom: -10%;
+
+    
+
+}
+.footer-bottom a:hover::after{
+    width: 100%;
+
+}
+
+@media (max-width:600px) {
+
+    .page1{
+        min-height:100vh;
+        width: 100vw;
+        
+        padding:0vw 0vw;
+        
+    }
+    nav{
+        padding: 8vw 5vw;
+        
+        background-color: #EFEAE3;
+       
+        
+       
+    }
+    nav img{
+        height: 9vh;
+        transition: all ease 0.2s;
+    }
+    .nav-part2{
+        
+        display: none;
+        position: relative;
+    
+    }
+    nav h3{
+        position: absolute;
+        display: block;
+        padding: 3vw 5vw;
+        border: 1px solid #ababab;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 200;
+        padding-left: 10vw;
+        left:65%;
+       
+    }
+    
+}
 
 
 
