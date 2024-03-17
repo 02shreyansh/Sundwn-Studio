@@ -180,19 +180,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
-
-    
-
-
-
-
-
-
-
-
 swiperAnimation();
 imageAnimation();
 videoAnimation();

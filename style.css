@@ -28,16 +28,34 @@ body{
 
 
 
+
 .main{
     
     position: relative;
     z-index: 10;
     
 }
+::-webkit-scrollbar{
+    width: 8px;
+   
+}
+
+
+::-webkit-scrollbar-track{
+    background-color:#0a0a0a28;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color:#00000054;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+}
 
 
 
-
+/* page 1 */
 .page1{
     min-height:100vh;
     width: 100%;
@@ -46,6 +64,7 @@ body{
     padding: 0 2vw;
     
 }
+/* nav */
 nav{
     padding: 2vw 0vw;
     width: 100%;
@@ -100,6 +119,7 @@ nav h3{
 .nav-part2 h4:hover a{
     color:#fff;
 }
+/* center */
 .center{
     height: 79vh;
     width: 100%;
@@ -121,12 +141,14 @@ nav h3{
     text-align: right;
     line-height: 8vw;
 }
+/* page1 video */
 .page1 video{
     position: relative;
     width: 100%;
     border-radius: 30px;
     margin-top: 4vw;
 }
+/* shape of page1 */
 .hero-shape{
     position: absolute;
     width: 46vw;
@@ -180,6 +202,7 @@ nav h3{
     }
     
 }
+/* page 2 */
 .page2{
     min-height: 100vh;
     width: 100%;
@@ -187,6 +210,7 @@ nav h3{
     padding: 8vw 0;
     position: relative;
 }
+/* moving text */
 .moving-text{
     overflow-x: auto;
     white-space: nowrap;
@@ -224,6 +248,7 @@ nav h3{
     }
     
 }
+/* page2 -bottom */
 .page2-bottom{
     height: 80vh;
     width: 100%;
@@ -279,6 +304,8 @@ nav h3{
     }
     
 }
+
+/* page3 */
 .page3{
     min-height: 100vh;
     width: 100%;
@@ -286,6 +313,7 @@ nav h3{
     padding:4vw 0;
     
 }
+/* elem or container for animation */
 .elem{
     height: 130px;
     width: 100%;
@@ -307,7 +335,7 @@ nav h3{
     color: #000000;
 
 }
-
+/* side content of elem */
 .element{
     z-index:9;
     text-align: right;
@@ -321,6 +349,7 @@ nav h3{
 .element h4:nth-child(2){
     color:#3635355c;
 }
+/* overlay or lapping */
 .elem .overlay{
     position: absolute;
     height: 100%;
@@ -335,6 +364,7 @@ nav h3{
 .elem:hover .overlay{
     top:0;
 }
+/* featured project  */
 .ele{
     height:100%;
     width: 100%;
@@ -354,6 +384,7 @@ nav h3{
 .ele h4{
     font-weight: 100;
 }
+/* fixed image and video container */
 .fixed-image .image-container
 {
     pointer-events: none;
@@ -395,6 +426,7 @@ nav h3{
     object-fit: cover;
 }
 
+/* more projects */
 .whole{
     display:inline-flex;
     margin-left: 3vw;
@@ -472,6 +504,7 @@ nav h3{
     margin-bottom: 3vw;
 }
 
+/* tabs ,contents and img  */
 .page3-bottom{
     min-height:80vh;
     width: 100%;
@@ -582,6 +615,8 @@ nav h3{
 .img-tab .active-img{
     display: block;
 }
+
+/* swiper page */
 .page4{
     height: 90vh;
     width: 100%;
@@ -627,14 +662,15 @@ nav h3{
     
 
 }
-
+/* contains footer */
 .page5{
     height: 100vh;
     width: 100%;
     /* background-color: #EFEAE3; */
     
 }
- .footer{
+/* footer */
+.footer{
     position: fixed;
     z-index: 9;
     height: 105vh;
@@ -656,8 +692,31 @@ nav h3{
 .footer-div{
     height:20vh;
     width: 100%;
-    background-color: red;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    z-index: 9;
+    
+    
+    
 }
+.footer-div .link h1{
+    padding-left: 3vw;
+    font-size: 2vw;
+    font-weight:500;
+    
+
+}
+.footer-div .link h1 a{
+    
+    color:#fff;
+    
+
+}
+
+
 .footer-bottom{
     
     border-top: 1px solid #dadada;
@@ -702,6 +761,114 @@ nav h3{
     align-items: center;
     gap:0.5vw;
 }
+
+.details label h4{
+    font-weight: 300;
+    font-size: 1.5vw;
+    padding-right: 4vw;
+    padding-bottom: 2.5vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.252);
+}
+
+.details input{
+    height: 2vw;
+    width: 15vw;
+    background-color: transparent;
+    border:none;
+    position: relative;
+    bottom: 2vw;
+}
+.details input::placeholder{
+    font-size: 1vw;
+    color: black;
+    
+    
+    
+}
+.contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top:9vw;
+    
+    
+    
+
+}
+.footer-shape{
+ 
+    height:40vw;
+    width: 40vw;
+    background-color:#FE320A;
+    border-radius: 50%;
+    filter: blur(30px);
+    animation: a 3s linear infinite alternate ;
+   
+}
+
+@keyframes a {
+    to{
+        transform: translate(-10%,10%)skew(0deg);
+
+    }
+    from{
+        transform: translate(10%,-10%)skew(-10deg);
+    }
+    
+}
+
+
+.footer-shape1{
+    
+    height:35vw;
+    width: 35vw;
+    background-color:#FE320A;
+    border-radius: 50%;
+    filter:blur(30px);
+    animation: b 3s linear infinite alternate ;
+    
+    
+}
+@keyframes b {
+    to{
+        transform: translate(-10%);
+
+    }
+    from{
+        transform: translate(10%);
+    }
+    
+}
+.footer-shape2{
+    
+    height:40vw;
+    width: 40vw;
+    background-color: #fe3f0a;
+    border-radius: 50%;
+    filter:blur(30px);
+    animation: c 3s linear infinite alternate ;
+    
+}
+
+@keyframes c {
+    to{
+        filter:blur(30px);
+        transform: translate(10%,20%)skew(0deg);
+
+    }
+    from{
+        filter:blur(30px);
+        transform: translate(20%)skew(-10deg);
+    }
+    
+}
+
+
+
+
+
+/* for menu in respomsive */
 #full-scr{
     height: 100vh;
     width: 100%;
@@ -850,8 +1017,128 @@ nav h3{
         width: 82vw;
        
     }
+    .page2{
+        padding-bottom: 30vw;
+    }
+
+    
+    .ele{
+        
+        margin-left:2vw;
+        gap:2vw;
+        align-items: center;
+        
+    }
+    .ele .small{
+        height:2vw;
+        width: 2vw;
+      
+    }
+    .ele h4{
+        font-size: 4vw;
+        
+    }
+    /* new */
+
+    /* page3 */
+    .page3{
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding:4vw 6vw;
+        
+    }
+    /* elem or container for animation */
+    .elem{
+        height: 130px;
+        width: 100%;
+        position: relative;
+        
+        border-bottom: 1px solid #38383864;
+        display: block;
+        pointer-events: none;
+        justify-content: left;
+        padding: 0 2vw;
+        overflow: hidden;
+        
+        
+    }
+    .elem a h2{
+        font-size: 3vw;
+        position: relative;
+        z-index: 9;
+        color: #000000;
+
+    }
+    /* side content of elem */
+    .element{
+        z-index:9;
+        text-align: right;
+        pointer-events: none;
+        
+        
+    }
+    .element h4{
+        font-weight: 200;
+    }
+    .element h4:nth-child(2){
+        color:#3635355c;
+    }
+    /* overlay or lapping */
+    .elem .overlay{
+        display:none;
+        
+        
+
+    }
+    
+    
+    
+    /* fixed image and video container */
+    .fixed-image .image-container
+    {
+
+        pointer-events:none;
+        height:35vw;
+        width: 27vw;
+        
+        border-radius: 10px;
+        position: fixed;
+        z-index: 99;
+        left:50%;
+        top:25%;
+        display: none;
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+
+
+
+    .fixed-image .video-container {
+        pointer-events: none;
+        width: 27vw;
+        height: 35vw; /* Set the desired height*/ 
+        position: fixed;
+        z-index: 99;
+        left: 50%;
+        top: 25%;
+        
+        display: none;
+        overflow: hidden; /* Hide any overflowing content*/ 
+    }
+
+    .fixed-image .video-container video {
+        width: 100%;
+        height: 100%;
+        
+        border-radius: 10px;
+        object-fit: cover;
+    }
 
 }
+/* loader */
 .loader{
     height: 100%;
     width: 100%;

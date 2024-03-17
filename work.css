@@ -117,7 +117,7 @@ nav{
                  11px 11px 19px #ffffff;;
     
     
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     gap:1vw;
@@ -130,8 +130,8 @@ nav{
     color:black;
 }
 .right .gooey{
-    position:absolute;
-    top:0;
+    position: fixed;
+    top:10vw;
     width: 80%;
     left:22vw;
     
