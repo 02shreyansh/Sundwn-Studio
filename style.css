@@ -35,7 +35,7 @@ body{
     z-index: 10;
     
 }
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     width: 8px;
    
 }
@@ -51,7 +51,7 @@ body{
     background-color:#00000054;
     backdrop-filter: blur(20px);
     border-radius: 15px;
-}
+} */
 
 
 
