@@ -1,16 +1,17 @@
 @font-face {
     font-family: neu;
-    src: url(./NeueHaasDisplayMediu.ttf);
+    src: url(/Sundwn-Studio/fonts/NeueHaasDisplayMediu.ttf);
 }
 @font-face {
-    font-family: neu;
+    font-family: neu;     
+   
     font-weight: 100;
-    src: url(./NeueHaasDisplayLight.ttf);
+    src: url(/Sundwn-Studio/fonts/NeueHaasDisplayLight.ttf);
 }
 @font-face {
     font-family: neu;
     font-weight: 200;
-    src: url(./NeueHaasDisplayRoman.ttf);
+    src: url(/Sundwn-Studio/fonts/NeueHaasDisplayRoman.ttf);
 }
 
 *{
@@ -785,84 +786,7 @@ nav h3{
     
     
 }
-.contain{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    top:9vw;
-    
-    
-    
 
-}
-.footer-shape{
- 
-    height:40vw;
-    width: 40vw;
-    background-color:#FE320A;
-    border-radius: 50%;
-    filter: blur(30px);
-    animation: a 3s linear infinite alternate ;
-   
-}
-
-@keyframes a {
-    to{
-        transform: translate(-10%,10%)skew(0deg);
-
-    }
-    from{
-        transform: translate(10%,-10%)skew(-10deg);
-    }
-    
-}
-
-
-.footer-shape1{
-    
-    height:35vw;
-    width: 35vw;
-    background-color:#FE320A;
-    border-radius: 50%;
-    filter:blur(30px);
-    animation: b 3s linear infinite alternate ;
-    
-    
-}
-@keyframes b {
-    to{
-        transform: translate(-10%);
-
-    }
-    from{
-        transform: translate(10%);
-    }
-    
-}
-.footer-shape2{
-    
-    height:40vw;
-    width: 40vw;
-    background-color: #fe3f0a;
-    border-radius: 50%;
-    filter:blur(30px);
-    animation: c 3s linear infinite alternate ;
-    
-}
-
-@keyframes c {
-    to{
-        filter:blur(30px);
-        transform: translate(10%,20%)skew(0deg);
-
-    }
-    from{
-        filter:blur(30px);
-        transform: translate(20%)skew(-10deg);
-    }
-    
-}
 
 
 

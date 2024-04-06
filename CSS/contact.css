@@ -1,22 +1,22 @@
 @font-face {
     font-family:neu ;
-    src: url(./NeueHaasDisplayMediu.ttf);
+    src: url(/Sundwn-Studio/fonts/NeueHaasDisplayMediu.ttf);
 }
 
 @font-face {
     font-family: neu;
     font-weight: 100;
-    src: url(./NeueHaasDisplayLight.ttf);
+    src: url(/Sundwn-Studio/fonts/NeueHaasDisplayLight.ttf);
 }
 @font-face {
     font-family: neu;
     font-weight: 200;
-    src: url(./NeueHaasDisplayRoman.ttf);
+    src: url(/Sundwn-Studio/fonts/NeueHaasDisplayRoman.ttf);
 }
 @font-face {
     font-family: neu;
     font-weight: 800;
-    src: url(./NeueHaasDisplayBold.ttf);
+    src: url(/Sundwn-Studio/fonts/NeueHaasDisplayBold.ttf);
 }
 
 *{
@@ -212,30 +212,54 @@ nav h3{
     width: 100%;
 
 }
+/* footer */
 .footer{
     position: fixed;
     z-index: 9;
     height: 105vh;
     width: 100%;
+    color: #fff;
     background-color: #000000;
-    color:#fff;
     bottom: 0;
     display: flex;
-    /* align-items: flex-end; */
+    
+
     justify-content: flex-end;
     flex-direction: column;
-    padding: 1vw 3vw;
-
+    padding: 0 3vw;
 
 }
 .footer h1{
     font-size: 23vw;
 }
 .footer-div{
-    height: 20vh;
+    height:20vh;
     width: 100%;
-    background-color: red;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    z-index: 9;
+    
+    
+    
 }
+.footer-div .link h1{
+    padding-left: 3vw;
+    font-size: 2vw;
+    font-weight:500;
+    
+
+}
+.footer-div .link h1 a{
+    
+    color:#fff;
+    
+
+}
+
+
 .footer-bottom{
     
     border-top: 1px solid #dadada;
@@ -243,35 +267,66 @@ nav h3{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
+    position: relative;
     
-
+    
+    
+  
 }
 .footer-bottom h4{
-    font-size: 1.2vw;
     font-weight: 200;
+    
+    
 }
-.footer-bottom a{
-    pointer-events: all;
-    cursor: pointer;
+
+.footer-bottom h4 a{
     color:#fff;
     position: relative;
+    
 }
-.footer-bottom a::after{
+/* .footer-bottom h4 a::after{
     content: "";
-    position: absolute;
-    height: 1%;
+    height: 10%;
     width: 0%;
-    background-color: white;
+    position: absolute;
+    background-color: #fff;
     left:0;
     bottom: -10%;
-
+    transition: width ease-in-out 0.5s;
     
-
 }
-.footer-bottom a:hover::after{
+.footer-bottom h4 a:hover::after{
     width: 100%;
+} */
+.footer-bottom .assets{
+    display: flex;
+    align-items: center;
+    gap:0.5vw;
+}
 
+.details label h4{
+    font-weight: 300;
+    font-size: 1.5vw;
+    padding-right: 4vw;
+    padding-bottom: 2.5vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.252);
+}
+
+.details input{
+    height: 2vw;
+    width: 15vw;
+    background-color: transparent;
+    border:none;
+    position: relative;
+    bottom: 2vw;
+}
+.details input::placeholder{
+    font-size: 1vw;
+    color: black;
+    
+    
+    
 }
 
 @media (max-width:600px) {
