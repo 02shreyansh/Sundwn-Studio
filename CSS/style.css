@@ -610,6 +610,7 @@ nav h3{
 }
 
 
+
 .img-tab .img-content{
     display: none;
 }
@@ -1156,6 +1157,67 @@ nav h3{
         width: 100%;
         bottom: 3vw;
     }
+
+    /* tabs ,contents and img  */
+    .page3-bottom{
+        
+        display: block;
+        padding: 4vw;
+     
+    }
+    .page3-bottom .left{
+        height: 60vh;
+        
+        border-radius: 15px;
+       
+        background-color: black;
+    }
+
+    .left-content{
+        padding: 13vw;
+        padding-bottom: 0;
+        margin-bottom: 5vw;
+        position:relative;
+  
+    }
+
+    .left-content  h1{
+        
+        font-size: 9vw;
+     
+    
+    }
+   
+    .tab p{
+        width: 55%;
+        
+        left:9%;
+        font-size: 3.5vw;
+    
+    }
+    .left-content::after{
+     
+        height: 59%;
+     
+        top:35%;
+        left:9%;
+    }
+    .page3-bottom .right{
+        height: 70vh;
+       
+        position: relative;
+        bottom:5vw;
+    
+    }
+    .page3-bottom .right img{
+        
+        border-radius: 15px;
+        
+        
+    }
+
+
+    
     
 
 }
