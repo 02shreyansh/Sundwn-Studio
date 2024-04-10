@@ -825,6 +825,8 @@ nav h3{
     font-size: 6vw;
 }
 
+/* Responsive */
+
 @media (max-width:600px) {
     .page1{
         min-height:100vh;
@@ -1215,12 +1217,56 @@ nav h3{
         
         
     }
-
-
-    
-    
+ 
 
 }
+
+@media (max-width:600px){
+    .page4 .who{
+        position: relative;
+        bottom: 51vw;
+        padding-bottom: 10vw;
+    }
+    .page4 .who .small{
+        height: 3vw;
+        width: 3vw;
+    }
+    .page4{
+        height: 70vh;
+        
+        
+    }
+    
+    .swiper-slide {
+        height: 40vh;
+        right: 15vw;
+        width: 50%;
+          
+    }
+    
+    
+    .swiper-slide:nth-child(4){
+        height:40vh;
+        width: 55%;
+        
+    }
+    .swiper-slide:nth-child(5){
+        width: 50%;
+    }
+    .swiper-slide:nth-child(6){
+        height:50vh;
+        width: 50%;
+    }
+    .swiper-slide h4{
+        
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+        
+    
+    }
+
+}
+
 /* loader */
 .loader{
     height: 100%;
