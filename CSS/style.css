@@ -949,7 +949,7 @@ nav h3{
     }
     .bottom-2 p{
        
-        font-size: 3vw;
+        font-size: 3.5vw;
         position: relative;
         z-index: 9;
     }
@@ -969,6 +969,9 @@ nav h3{
         margin-left:2vw;
         gap:2vw;
         align-items: center;
+        
+        position: relative;
+        bottom: 18vw;
         
     }
     .ele .small{
@@ -1002,8 +1005,8 @@ nav h3{
         justify-content: left;
         padding: 0 2vw;
         overflow: hidden;
-        
-        
+        background-image: url('\Sundwn-Studio\images\exp1.webp');
+      
     }
     .elem a h2{
         font-size: 3vw;
@@ -1220,12 +1223,13 @@ nav h3{
  
 
 }
+/* Swiper responsive part  */
 
-@media (max-width:600px){
+@media (max-width :600px){
     .page4 .who{
         position: relative;
         bottom: 51vw;
-        padding-bottom: 10vw;
+        
     }
     .page4 .who .small{
         height: 3vw;
@@ -1238,6 +1242,8 @@ nav h3{
     }
     
     .swiper-slide {
+        position: relative;
+        top:10vw;
         height: 40vh;
         right: 15vw;
         width: 50%;
