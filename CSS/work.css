@@ -339,3 +339,87 @@ nav{
     
     
 }
+
+@media (max-width:600px) {
+    /* footer */
+    .footer{
+        padding: 15vw 3vw;
+    }
+    .footer h1{
+        font-size: 23vw;
+    }
+    .footer-div{
+        padding-top: 6vw;
+        height:80vh;
+        display: block;
+    }
+    .footer-div .link{
+        padding-bottom: 8vw;
+    }
+    .footer-div .link h1{
+        font-size: 15vw;
+    }
+    
+
+
+    .footer-bottom{
+        
+        border-top: 1px solid #dadada;
+        height: 20vh;
+        width: 100%;
+        display :block;
+        
+        position: relative;
+        
+        
+        
+    
+    }
+    .footer-bottom h4:nth-child(1){
+        
+        position: relative;
+        top:19vw;
+        font-size: 4vw;
+        text-align: center;
+        font-weight: 200;
+
+    }
+    .footer-contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0vw 3vw;
+        
+    }
+    .footer-contain h4{
+        font-size: 3.5vw;
+        font-weight: 200;
+        
+        
+    }
+
+    .footer-bottom h4 a{
+        color:#fff;
+        position: relative;
+        
+    }
+    
+    .footer-bottom .assets{
+        display: flex;
+        align-items: center;
+        gap:0.5vw;
+    }
+
+    .details label h4{
+        
+        font-size: 5vw;
+        padding-left: 3vw;
+    }
+
+    .details input{
+        height: 30vw;
+        width: 100%;
+        bottom: 3vw;
+    }
+    
+}
