@@ -1,5 +1,7 @@
-
-
+//  prevent inspect
+document.addEventListener("contextmenu",function(e){
+    e.preventDefault()
+},false)
 
 
 const scroll = new LocomotiveScroll({
