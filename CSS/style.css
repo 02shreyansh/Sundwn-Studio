@@ -829,8 +829,8 @@ nav h3{
 
 @media (max-width:600px) {
     .page1{
-        min-height:100vh;
-        width: 100vw;
+        min-height:60vh;
+        width: 100%;
         
         padding:0vw 0vw;
         
@@ -872,6 +872,8 @@ nav h3{
 
     }
     .left h3{
+        position: relative;
+        bottom: 10vh;
         width:80%;
         font-size: 5.5vw;
         line-height: 6vw;
@@ -964,124 +966,6 @@ nav h3{
     }
 
     
-    .ele{
-        
-        margin-left:2vw;
-        gap:2vw;
-        align-items: center;
-        
-        position: relative;
-        bottom: 18vw;
-        
-    }
-    .ele .small{
-        height:2vw;
-        width: 2vw;
-      
-    }
-    .ele h4{
-        font-size: 4vw;
-        
-    }
-    /* new */
-
-    /* page3 */
-    .page3{
-        min-height: 100vh;
-        width: 100%;
-        background-color: #EFEAE3;
-        padding:4vw 6vw;
-        
-    }
-    /* elem or container for animation */
-    .elem{
-        height: 130px;
-        width: 100%;
-        position: relative;
-        
-        border-bottom: 1px solid #38383864;
-        display: block;
-        pointer-events: none;
-        justify-content: left;
-        padding: 0 2vw;
-        overflow: hidden;
-        background-image: url('\Sundwn-Studio\images\exp1.webp');
-      
-    }
-    .elem a h2{
-        font-size: 3vw;
-        position: relative;
-        z-index: 9;
-        color: #000000;
-
-    }
-    /* side content of elem */
-    .element{
-        z-index:9;
-        text-align: right;
-        pointer-events: none;
-        
-        
-    }
-    .element h4{
-        font-weight: 200;
-    }
-    .element h4:nth-child(2){
-        color:#3635355c;
-    }
-    /* overlay or lapping */
-    .elem .overlay{
-        display:none;
-        
-        
-
-    }
-    
-    
-    
-    /* fixed image and video container */
-    .fixed-image .image-container
-    {
-
-        pointer-events:none;
-        height:35vw;
-        width: 27vw;
-        
-        border-radius: 10px;
-        position: fixed;
-        z-index: 99;
-        left:50%;
-        top:25%;
-        display: none;
-        background-size: cover;
-        background-position: center;
-    
-    }
-
-
-
-
-    .fixed-image .video-container {
-        pointer-events: none;
-        width: 27vw;
-        height: 35vw; /* Set the desired height*/ 
-        position: fixed;
-        z-index: 99;
-        left: 50%;
-        top: 25%;
-        
-        display: none;
-        overflow: hidden; /* Hide any overflowing content*/ 
-    }
-
-    .fixed-image .video-container video {
-        width: 100%;
-        height: 100%;
-        
-        border-radius: 10px;
-        object-fit: cover;
-    }
-
     /* footer */
     .footer{
         padding: 15vw 3vw;
@@ -1223,22 +1107,143 @@ nav h3{
  
 
 }
+@media (max-width: 600px) {
+
+    /* page3 */
+    .page3{
+        min-height: 130vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding:4vw 5vw;
+        
+        
+    }
+    /* elem or container for animation */
+    .elem{
+        
+        pointer-events: none;
+        height: 75vh;
+        position: relative;
+        display: block;
+        border-radius: 20px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;    
+    }
+    /* for video */
+    .second{
+        display: none;
+    }
+    
+    /* for image  */
+    
+    .elem:nth-child(2){
+        
+        background-image: url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388-p-800.webp');
+ 
+    }
+    
+    .elem:nth-child(4){
+        position: relative;
+
+        top:6vw;
+        background-image: url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16f4_Copy%2520of%2520Nike_Soho_50th_SU22_FL1_6176-p-800.webp');
+    }
+    .elem:nth-child(5){
+        position: relative;
+
+        top:12vw;
+        background-image: url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16c5_Copy%2520of%2520Nike_Soho_AMD21_0781_LORES-p-800.webp');
+
+    }
+    .elem:nth-child(7){
+        position: relative;
+
+        top:18vw;
+        
+        background-image: url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b163b_Copy-of-IMG_1180-p-800.webp');
+    }
+    .elem a h2{
+        
+        top:63vh;
+       
+        font-size: 6vw;
+        position: relative;
+        z-index: 9;
+        color: #000;
+
+    }
+    /* side content of elem */
+    .element{
+        top:65vh;
+        
+        
+
+        position: relative;
+        
+        z-index:10;
+        text-align: left;
+ 
+        
+        
+    }
+    
+    .element h4:nth-child(2){
+        color:#2e272766;
+    }
+
+    /* featured project  */
+    .ele{
+        
+        gap:1.5vw;
+        padding:0 4vw;
+        position: relative;
+        bottom: 3vw;
+    }
+    .ele .small{
+        height:3vw;
+        width: 3vw;
+        position: relative;
+        top: 1vw;
+ 
+    }
+    
+
+    
+
+    /* more projects */
+    .whole{
+        padding: 4vw  9vw;
+    }    
+    .whole .all h4{
+        top:-10%;
+        right:17%;
+  
+    }
+    .whole .all img {
+        height: 4vw;
+        width: 8vw;    
+    }
+    
+
+    .elem-container{
+        margin-bottom: 11vh;
+    }
+
+    
+}
 /* Swiper responsive part  */
 
 @media (max-width :600px){
-    .page4 .who{
-        position: relative;
-        bottom: 51vw;
-        
-    }
+    
     .page4 .who .small{
         height: 3vw;
         width: 3vw;
     }
     .page4{
         height: 70vh;
-        
-        
+ 
     }
     
     .swiper-slide {
@@ -1272,6 +1277,9 @@ nav h3{
     }
 
 }
+
+
+
 
 /* loader */
 .loader{
