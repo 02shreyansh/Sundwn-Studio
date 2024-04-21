@@ -82,7 +82,6 @@ nav h3{
     border-radius: 50%;
     transition: all ease 0.4s;
     
-
 }
 .nav-part2 h4:hover::after{
     bottom: 0;
@@ -491,6 +490,58 @@ nav h3{
         bottom: 3vw;
     }
     
+}
+
+@media (max-width:600px){
+    .center{
+        min-height:90vh;
+        width:100%;
+        display:block;
+        position: relative;
+    }
+    .center img{
+        height:65vw;
+        width: 65vw;
+        top:50vh;   
+    }
+    
+    
+    .right h1{
+        
+        position: relative;
+        bottom:50vw;
+        font-size:10vw;
+        line-height: 8.5vw;
+        
+        
+    }
+    .right h3 {
+        bottom:45vw;
+        
+        font-size: 4.5vw;
+        left:19vw
+       
+    }
+    .right h3::after{
+        top: 90%;
+    }
+
+    .content {
+        top:35%;
+        left:15%;
+        
+     }
+    .content h2{
+       font-size: 5vw;
+    }
+     
+    .shape{
+        height: 67vw;
+        width: 67vw;
+        left:20%;
+        top:12%;
+        
+    }
 }
 
 
