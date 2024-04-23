@@ -173,20 +173,15 @@ function opentab(tabname) {
 
 }
 
+// Retrieve the active tab index from localStorage on page load
 document.addEventListener('DOMContentLoaded', function () {
+    
     var activeImageId = localStorage.getItem('activeImageId');
 
     if (activeImageId !== null) {
-        // Find the index of the tab with the matching ID
-        var activeTabIndex = Array.from(tabcontents).findIndex(tab => tab.id === activeImageId);
-
-        // Check if the index is valid
-        if (activeTabIndex !== -1) {
-            // Add "active" class to the corresponding tab link, tab content, and image content
-            tablinks[activeTabIndex].classList.add("active");
-            tabcontents[activeTabIndex].classList.add("active-tab");
-            imgtab[activeTabIndex].classList.add("active-img");
-        }
+        tablinks[activeTabIndex].classList.add("active");
+        tabcontents[activeTabIndex].classList.add("active-tab");
+        imgtab[activeTabIndex].classList.add("active-img");
     }
 });
 
